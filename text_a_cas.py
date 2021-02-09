@@ -17,15 +17,15 @@ t.pu()
 t.goto(-150, 150)
 t.pd()
 
-for i in range(1):
-    for ii in range(40):
-        t.pencolor( random.choice(barvy) )
+
+for ii in range(40):
+        t.pencolor(random.choice(barvy))
         t.penup()
-        t.fd(i)
+        t.fd(1)
         t.pd()
-        t.write( "python", align="center", font=("Arial", fs, "bold") )
+        t.write( "python", align="center", font=("Arial", fs + 2 * ii, "bold") )
         t.left(90)
-        fs += 2
+
 
 t.pu()
 t.goto(-140, -20)
