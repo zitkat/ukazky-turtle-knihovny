@@ -3,4 +3,5 @@ jmena = ["ada",
 "tom", 
 "míša", 
 "filip aka mintaka",
-"vašek"]
+"vašek",
+"klárka"]
