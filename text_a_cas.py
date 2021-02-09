@@ -33,10 +33,11 @@ t.pd()
 
 dnes = datetime.datetime.now()
 
-msg = "Zdravíčko!\nDnes je: " + dnes.strftime("%A") + ', ' + dnes.strftime("%d") \
-        + '. ' + dnes.strftime("%B") + ', ' + dnes.strftime("%Y") + \
-        "\nHodin je: " + dnes.strftime("%H") + ':' + dnes.strftime("%M") + \
-        "\nDen v roce: " + dnes.strftime("%j") + '\nTýden v roce: ' + dnes.strftime("%U")
+msg = "\n".join(["Zdravíčko!", 
+                dnes.strftime("Dnes je: %A, %d. %B, %Y") , 
+                dnes.strftime("Hodin je: %H:%M") ,
+                dnes.strftime("Den v roce: %j") ,
+                dnes.strftime("Týden v roce: %U")])
 
 t.color("black")
 t.write( msg, font=('Arial', 18 , 'bold'), align='center')
