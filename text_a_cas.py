@@ -3,6 +3,8 @@ import turtle
 import random
 import datetime
 
+from ucastnici import jmena
+
 wn = turtle.Screen()
 wn.bgcolor("dimgray")
 t = turtle.Turtle()
@@ -46,7 +48,7 @@ t.pu()
 t.goto(-140, -80)
 t.pd()
 
-jmena = ["ada", "eva", "tom", "míša", "mintaka"]
+
 jmena.sort()
 
 for i in jmena:
