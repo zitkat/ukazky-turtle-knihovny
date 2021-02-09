@@ -45,13 +45,19 @@ t.color("black")
 t.write( msg, font=('Arial', 18 , 'bold'), align='center')
 
 t.pu()
-t.goto(-140, -80)
+t.goto(-120, -80)
 t.pd()
 
 
 jmena.sort()
 
-for i in jmena:
-        t.write("\nzdraví: \n%s" % jmena, font=("Arial", 10, "normal"), align="center")
+t.up()
+t.write("Zdraví:", font=("Arial", 14, "normal"))
+#t.fd(80)
+t.setheading(-90)
+for jmeno in jmena:
+        t.goto(random.randint(50, 200), random.randint(-100, 0))
+        t.write("%s" % jmeno, font=("Arial", 12, "normal"), align="center")
+        #t.forward(15)
         
 wn.exitonclick()
